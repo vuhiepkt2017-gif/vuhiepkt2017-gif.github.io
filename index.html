@@ -12,33 +12,55 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
         }
         h1 {
             color: #00F5FF;
             text-shadow: 0 0 10px #00F5FF;
+            margin-bottom: 8px;
         }
         p {
             color: #FF007F;
+            margin-bottom: 24px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
         }
         a {
             color: #00F5FF;
             text-decoration: none;
             border: 1px solid #00F5FF;
-            padding: 8px 16px;
-            border-radius: 4px;
-            margin-top: 10px;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            min-width: 250px;
+            text-align: center;
+        }
+        a:hover {
+            background: #00F5FF;
+            color: #0D0D11;
         }
     </style>
 </head>
 <body>
     <h1>VTD Studio Apps Support</h1>
-    <p>Official developer website.</p>
-    <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
-        <a href="app-ads.txt">app-ads.txt</a>
-        <a href="healthy-ai-terms.html">Healthy AI Terms of Service</a>
-        <a href="healthy-ai-privacy.html">Healthy AI Privacy Policy</a>
+    <p>Official developer website for VTD Studio apps.</p>
+    <div class="links">
+        <h3 style="color: #FF6F61; margin: 8px 0 2px; font-size: 15px;">Healthy AI</h3>
+        <a href="healthy-ai-terms.html" style="border-color: #FF6F61; color: #FF6F61;">Healthy AI - Điều khoản dịch vụ (Terms)</a>
+        <a href="healthy-ai-privacy.html" style="border-color: #FF6F61; color: #FF6F61;">Healthy AI - Chính sách quyền riêng tư (Privacy)</a>
+
+        <h3 style="color: #00F5FF; margin: 12px 0 2px; font-size: 15px;">Split Brain</h3>
+        <a href="terms.html">Split Brain - Điều khoản dịch vụ (Terms)</a>
+        <a href="privacy.html">Split Brain - Chính sách quyền riêng tư (Privacy)</a>
+
+        <a href="app-ads.txt" style="margin-top: 10px; border-color: #888; color: #BBB;">app-ads.txt</a>
     </div>
 </body>
 </html>
