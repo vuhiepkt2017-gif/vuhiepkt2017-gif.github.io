@@ -12,29 +12,49 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
         }
         h1 {
             color: #00F5FF;
             text-shadow: 0 0 10px #00F5FF;
+            margin-bottom: 8px;
         }
         p {
             color: #FF007F;
+            margin-bottom: 24px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
         }
         a {
             color: #00F5FF;
             text-decoration: none;
             border: 1px solid #00F5FF;
-            padding: 8px 16px;
-            border-radius: 4px;
-            margin-top: 10px;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            min-width: 200px;
+            text-align: center;
+        }
+        a:hover {
+            background: #00F5FF;
+            color: #0D0D11;
         }
     </style>
 </head>
 <body>
     <h1>VTD Studio Apps Support</h1>
-    <p>Official developer website.</p>
-    <a href="app-ads.txt">View app-ads.txt</a>
+    <p>Official developer website for Split Brain.</p>
+    <div class="links">
+        <a href="terms.html">Điều khoản dịch vụ (Terms)</a>
+        <a href="privacy.html">Chính sách quyền riêng tư (Privacy)</a>
+        <a href="app-ads.txt">app-ads.txt</a>
+    </div>
 </body>
 </html>
